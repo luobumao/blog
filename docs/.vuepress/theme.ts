@@ -31,8 +31,10 @@ export default hopeTheme({
   },
   plugins: {
     blog: true,
-    slimsearch: {
-      indexContent: true,
+    docsearch: {
+      appId: "MZWTWI0E6C",
+      apiKey: "e3360620287a9dd14a767df38ade21af",
+      indexName: "博客索引",
     },
   },
 });

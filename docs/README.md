@@ -4,7 +4,7 @@ layout: Blog
 icon: house
 title: 字母的博客
 heroText: 字母的博客
-heroFullScreen: false
+heroFullScreen: true
 tagline: 生产的垃圾，挥霍的时间，浪费的资源。
 projects:
   - icon: folder-open
@@ -40,3 +40,4 @@ projects:
 footer: ""
 copyright: MIT Licensed | Copyright © 2025-present 字母
 ---
+<meta name="algolia-site-verification"  content="402EA07D76B8287C" />
