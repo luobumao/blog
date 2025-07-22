@@ -1,5 +1,4 @@
 import { hopeTheme } from "vuepress-theme-hope";
-
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
@@ -9,10 +8,16 @@ export default hopeTheme({
   favicon: "/assets/images/avatar.png",
   docsDir: "docs",
   darkmode: "toggle",
+  repo: "https://github.com/luobumao/blog",
   navbar,
   sidebar,
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "Search"],
+  },
   blog: {
-    description: "一个记忆力很差的中年人",
+    description: "国家一级借助AI编程表演大师",
     avatar: "/assets/images/avatar.png",
     medias: {
       Telegram: "https://t.me/pink_poop",
@@ -26,5 +31,8 @@ export default hopeTheme({
   },
   plugins: {
     blog: true,
+    slimsearch: {
+      indexContent: true,
+    },
   },
 });

@@ -1,4 +1,6 @@
-<template><div><h1 id="注册控件实现调用api发送短信" tabindex="-1"><a class="header-anchor" href="#注册控件实现调用api发送短信"><span>注册控件实现调用api发送短信</span></a></h1>
+<template><div><h1 id="向我发送短信控件" tabindex="-1"><a class="header-anchor" href="#向我发送短信控件"><span>向我发送短信控件</span></a></h1>
+<p>通过全局注册控件实现调用乌龟电信api免费发送短信给自己的号码。</p>
+<!-- more -->
 <h2 id="项目示例" tabindex="-1"><a class="header-anchor" href="#项目示例"><span>项目示例</span></a></h2>
 <SmsSender /><h2 id="client-js代码部分" tabindex="-1"><a class="header-anchor" href="#client-js代码部分"><span>client.js代码部分</span></a></h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>import { defineClientConfig } from 'vuepress/client'</span></span>

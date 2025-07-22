@@ -1,4 +1,6 @@
-<template><div><h1 id="_3xui自动重置入站流量和客户端流量" tabindex="-1"><a class="header-anchor" href="#_3xui自动重置入站流量和客户端流量"><span>3xui自动重置入站流量和客户端流量</span></a></h1>
+<template><div><h1 id="_3xui自动重置功能" tabindex="-1"><a class="header-anchor" href="#_3xui自动重置功能"><span>3xui自动重置功能</span></a></h1>
+<p>利用shell脚本使用curl调用api实现3xui自动重置客户端流量和入站流量功能。</p>
+<!-- more -->
 <h2 id="部署教程" tabindex="-1"><a class="header-anchor" href="#部署教程"><span>部署教程</span></a></h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>nano /你的自定义路径/自定义名字.sh</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>把脚本内容修改好后粘贴进去

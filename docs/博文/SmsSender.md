@@ -1,9 +1,15 @@
 ---
 icon: pen-to-square
 date: 2025-07-22
+category:
+  - 服务
+tag:
+  - Python
+  - Vue
 ---
-# 注册控件实现调用api发送短信
-
+# 向我发送短信控件
+通过全局注册控件实现调用乌龟电信api免费发送短信给自己的号码。
+<!-- more -->
 ## 项目示例
 <SmsSender />
 ## client.js代码部分

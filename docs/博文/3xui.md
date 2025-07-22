@@ -1,9 +1,14 @@
 ---
 icon: pen-to-square
 date: 2025-07-22
+category:
+  - 脚本
+tag:
+  - Shell
 ---
-# 3xui自动重置入站流量和客户端流量
-
+# 3xui自动重置功能
+利用shell脚本使用curl调用api实现3xui自动重置客户端流量和入站流量功能。
+<!-- more -->
 ## 部署教程
 ```
 nano /你的自定义路径/自定义名字.sh

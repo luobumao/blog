@@ -11,6 +11,9 @@ importers:
       '@vuepress/bundler-webpack':
         specifier: 2.0.0-rc.24
         version: 2.0.0-rc.24
+      '@vuepress/plugin-slimsearch':
+        specifier: 2.0.0-rc.112
+        version: 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
       sass-embedded:
         specifier: ^1.89.2
         version: 1.89.2
@@ -25,7 +28,7 @@ importers:
         version: 2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.94
-        version: 2.0.0-rc.94(markdown-it@14.1.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.100.2))(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
+        version: 2.0.0-rc.94(@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)))(markdown-it@14.1.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.100.2))(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
 
 packages:
 
@@ -967,6 +970,11 @@ packages:
 
   '@vuepress/plugin-sitemap@2.0.0-rc.112':
     resolution: {integrity: sha512-64a/Kpu+2zY8r7o5AqFbZ1M3VKp44Z3RR6mGcr/747BEzVSl7ULk5ctx7Smtqm6Z2sSLEEU1aC6ZAtV5I+jqeQ==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.24
+
+  '@vuepress/plugin-slimsearch@2.0.0-rc.112':
+    resolution: {integrity: sha512-eSRcT/DwgFzzVtdx7tDhzHRwJtUwyExTDbjsnC8GWpTWl4VuFgLZv8iv+ogGCrk2qVmstnoZH4gdqDnYAWZtRA==}
     peerDependencies:
       vuepress: 2.0.0-rc.24
 
@@ -3005,6 +3013,10 @@ packages:
     resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==}
     engines: {node: '>=14.16'}
 
+  slimsearch@2.2.2:
+    resolution: {integrity: sha512-C+E3y4sKKzPzcOyty0G9CjXdLvY0ZWPSCQCDNqSv/P6+rvoL6RiHvuwr0wnxf0QgdbdyNiJQ0w7OdudHoabpCg==}
+    engines: {node: '>=18.18.0'}
+
   sockjs@0.3.24:
     resolution: {integrity: sha512-GJgLTZ7vYb/JtPSSZ10hsOYIvEYsjbNU+zPdIHcUaWVNUEPivzxku31865sSSud0Da0W4lEeOPlmw93zLQchuQ==}
 
@@ -4619,6 +4631,18 @@ snapshots:
     dependencies:
       '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
       sitemap: 8.0.0
+      vuepress: 2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
+      '@vueuse/core': 13.5.0(vue@3.5.17)
+      cheerio: 1.1.2
+      chokidar: 4.0.3
+      slimsearch: 2.2.2
+      vue: 3.5.17
       vuepress: 2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)
     transitivePeerDependencies:
       - typescript
@@ -6709,6 +6733,8 @@ snapshots:
 
   slash@5.1.0: {}
 
+  slimsearch@2.2.2: {}
+
   sockjs@0.3.24:
     dependencies:
       faye-websocket: 0.11.4
@@ -7035,7 +7061,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.94(markdown-it@14.1.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.100.2))(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)):
+  vuepress-theme-hope@2.0.0-rc.94(@vuepress/plugin-slimsearch@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)))(markdown-it@14.1.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.100.2))(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17)):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
@@ -7078,6 +7104,7 @@ snapshots:
       vuepress-plugin-md-enhance: 2.0.0-rc.94(markdown-it@14.1.0)(sass-embedded@1.89.2)(sass-loader@16.0.5(sass-embedded@1.89.2)(webpack@5.100.2))(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
       vuepress-shared: 2.0.0-rc.94(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
     optionalDependencies:
+      '@vuepress/plugin-slimsearch': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-webpack@2.0.0-rc.24)(vue@3.5.17))
       sass-embedded: 1.89.2
       sass-loader: 16.0.5(sass-embedded@1.89.2)(webpack@5.100.2)
     transitivePeerDependencies:
