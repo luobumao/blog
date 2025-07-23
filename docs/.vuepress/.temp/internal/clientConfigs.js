@@ -14,7 +14,7 @@ import * as clientConfig12 from 'C:/Users/liumi/Desktop/blog/docs/.vuepress/.tem
 import * as clientConfig13 from 'C:/Users/liumi/Desktop/blog/node_modules/.pnpm/@vuepress+plugin-active-hea_5d4b14c79871880f5893096714c9275a/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
 import * as clientConfig14 from 'C:/Users/liumi/Desktop/blog/node_modules/.pnpm/@vuepress+plugin-catalog@2._66c9d3c2ec025a7068d0f3893467044f/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
 import * as clientConfig15 from 'C:/Users/liumi/Desktop/blog/node_modules/.pnpm/@vuepress+plugin-nprogress@_53cfc4d5530ddc847e4eeeab4221ddb9/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
-import * as clientConfig16 from 'C:/Users/liumi/Desktop/blog/node_modules/.pnpm/@vuepress+plugin-slimsearch_a3200bed267396eb4c0deae36896e6cb/node_modules/@vuepress/plugin-slimsearch/lib/client/config.js'
+import * as clientConfig16 from 'C:/Users/liumi/Desktop/blog/docs/.vuepress/.temp/docsearch/config.js'
 import * as clientConfig17 from 'C:/Users/liumi/Desktop/blog/node_modules/.pnpm/@vuepress+plugin-redirect@2_213cf2ee294aec79ec4b77df45b7f33f/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
 import * as clientConfig18 from 'C:/Users/liumi/Desktop/blog/docs/.vuepress/.temp/theme-hope/config.js'
 import * as clientConfig19 from 'C:/Users/liumi/Desktop/blog/docs/.vuepress/client.js'

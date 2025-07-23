@@ -1,7 +1,9 @@
 ---
+pinned: true
 icon: pen-to-square
 date: 2025-07-22
 category:
+  - 原创
   - 服务
 tag:
   - Python

@@ -2,6 +2,7 @@
 icon: pen-to-square
 date: 2025-07-22
 category:
+  - 原创
   - 脚本
 tag:
   - Shell
@@ -34,7 +35,7 @@ crontab -e
 bash /你的自定义路径/自定义名字.sh
 ```
 查看是否运行正常
-## shell脚本内容
+## shell脚本代码
 ```
 #!/bin/bash
 

@@ -11,8 +11,11 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
+    "@iconify/vue": "^5.0.0",
     "@vuepress/bundler-webpack": "2.0.0-rc.24",
     "@vuepress/plugin-docsearch": "2.0.0-rc.112",
+    "install": "^0.13.0",
+    "pnpm": "^10.13.1",
     "sass-embedded": "^1.89.2",
     "sass-loader": "^16.0.5",
     "vue": "^3.5.17",

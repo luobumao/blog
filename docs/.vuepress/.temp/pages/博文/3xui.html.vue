@@ -16,7 +16,7 @@
 建议全部完工后执行:</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>bash /你的自定义路径/自定义名字.sh</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>查看是否运行正常</p>
-<h2 id="shell脚本内容" tabindex="-1"><a class="header-anchor" href="#shell脚本内容"><span>shell脚本内容</span></a></h2>
+<h2 id="shell脚本代码" tabindex="-1"><a class="header-anchor" href="#shell脚本代码"><span>shell脚本代码</span></a></h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>#!/bin/bash</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>PANEL_URL="https://域名或ip:端口/面板url根路径(不带/)" # 建议使用https，反代后可去掉":端口"不写</span></span>

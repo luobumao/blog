@@ -21,7 +21,7 @@ export default hopeTheme({
     avatar: "/assets/images/avatar.png",
     medias: {
       Telegram: "https://t.me/pink_poop",
-      Wechat: "https://u.wechat.com/EEwzuoEX6vGbWn6QNVNlhT4",
+      Github: "https://github.com/luobumao",
     },
   },
   author: {
@@ -29,12 +29,15 @@ export default hopeTheme({
     url: "https://zimubb.com",
     email: "zimuclone@gmail.com",
   },
-  plugins: {
+  plugins: ({
     blog: true,
     docsearch: {
       appId: "MZWTWI0E6C",
       apiKey: "e3360620287a9dd14a767df38ade21af",
       indexName: "博客索引",
     },
-  },
+    icon: {
+    assets: "iconify",
+    },
+  }),
 });
