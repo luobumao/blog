@@ -17,6 +17,7 @@
     "pnpm": "^10.13.1",
     "sass-embedded": "^1.89.2",
     "sass-loader": "^16.0.5",
+    "vditor": "^3.11.1",
     "vue": "^3.5.17",
     "vuepress": "2.0.0-rc.24",
     "vuepress-theme-hope": "2.0.0-rc.94"

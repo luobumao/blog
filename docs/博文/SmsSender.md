@@ -1,5 +1,4 @@
 ---
-pinned: true
 icon: material-icon-theme:vue
 date: 2025-07-22
 category:
@@ -14,16 +13,24 @@ tag:
 <!-- more -->
 ## 项目示例
 <SmsSender />
-## client.js代码部分
+## client.js配置
 ```
-import { defineClientConfig } from 'vuepress/client'
-import SmsSender from './components/SmsSender.vue'
+import { defineClientConfig } from '@vuepress/client';
+import ProtectedMarkdownEditor from './components/SmsSender.vue';
 
 export default defineClientConfig({
+  /**
+   * enhance 函数用于增强客户端应用。
+   * @param {object} context - 包含 app, router, siteData 的上下文对象。
+   */
   enhance({ app, router, siteData }) {
-    app.component('SmsSender', SmsSender)
+    // 使用 app.component() 来全局注册一个组件。
+    // 第一个参数 'SmsSender.vue' 是组件的标签名，
+    // 你之后可以在 Markdown 文件中直接使用 <SmsSender.vue />。
+    // 第二个参数是我们导入的组件本身。
+    app.component('SmsSender.vue', SmsSender.vue);
   },
-})
+});
 ```
 ## SmsSender.vue代码部分
 ```
