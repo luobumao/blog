@@ -1,5 +1,5 @@
 ---
-icon: pen-to-square
+icon: material-icon-theme:python
 date: 2025-07-23
 category:
   - 原创
@@ -10,7 +10,7 @@ tag:
 # Pagermaid插件调用Gemini(待完善)
 用于使用Gemini实现问答、模型切换、默认提示词设置和图像识别功能的人形自走机器人插件。
 <!-- more -->
-## 脚本功能
+## 插件功能
 ,gemini setapi <你的API密钥> - 设置您的 Google AI API 密钥
 
 ,gemini setmodel <模型名称> - 切换使用的 Gemini 模型

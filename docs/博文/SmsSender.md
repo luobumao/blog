@@ -1,6 +1,6 @@
 ---
 pinned: true
-icon: pen-to-square
+icon: material-icon-theme:vue
 date: 2025-07-22
 category:
   - 原创

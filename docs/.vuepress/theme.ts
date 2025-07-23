@@ -36,8 +36,5 @@ export default hopeTheme({
       apiKey: "e3360620287a9dd14a767df38ade21af",
       indexName: "博客索引",
     },
-    icon: {
-    assets: "iconify",
-    },
   }),
 });

@@ -1,5 +1,5 @@
 ---
-icon: pen-to-square
+icon: material-icon-theme:python
 date: 2025-07-23
 category:
   - 原创
@@ -10,6 +10,8 @@ tag:
 # Pagermaid插件生成旋转用户头像视频
 用于生成可自定义旋转速度与方向的用户头像旋转视频的人形自走机器人插件。
 <!-- more -->
+## 插件功能
+,rotate [时长:秒] [方向:顺/逆] - 生成旋转视频
 ## 必要的Python库
 `
 pip install numpy Pillow imageio imageio-ffmpeg
