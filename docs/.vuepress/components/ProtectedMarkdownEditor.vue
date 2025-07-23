@@ -54,31 +54,33 @@ const initializeVditor = (initialContent) => {
   if (!vditorRef.value || vditorInstance) return;
 
   const calculateInitialHeight = () => {
-    if (!vditorRef.value) return 300;
+    if (!vditorRef.value) return 400;
     const topOffset = vditorRef.value.getBoundingClientRect().top;
-    const availableHeight = window.innerHeight - topOffset;
-    const bottomPadding = 80;
-    const minHeight = 300;
-    return Math.max(minHeight, availableHeight - bottomPadding);
+    return Math.max(400, window.innerHeight - topOffset - 20);
   };
   
   vditorInstance = new Vditor(vditorRef.value, {
+    mode: 'sv',
+    preview: {
+      mode: 'preview',
+      actions: [],
+    },
+    value: initialContent,
     height: calculateInitialHeight(),
-    minHeight: 300,
-    mode: 'ir',
+    minHeight: 400,
     cache: { enable: false },
     toolbar: [
       { name: 'save', tip: '保存 (Ctrl+S)', hotkey: '⌘S/Ctrl+S', icon: saveIconSVG, click: () => handleSave() },
-      '|', 'headings', 'bold', 'italic', 'strike',
+      '|',
+      'preview', 
+      'fullscreen', 
+      '|',
+      'headings', 'bold', 'italic', 'strike',
       'list', 'ordered-list', 'check', '|',
       'quote', 'code', 'inline-code', 'upload', 'link', 'table', '|',
-      'preview', 'fullscreen', 'help',
+      'help',
     ],
-    preview: { actions: [] },
-    after: () => {
-      if (vditorInstance) vditorInstance.setValue(initialContent);
-    },
-    resize: { enable: true, position: 'bottom' }
+    resize: { enable: true }
   });
 };
 
@@ -101,7 +103,7 @@ const handleUnlock = async () => {
     
     isLocked.value = false;
     await nextTick();
-    initializeVditor(data.content);
+    initializeVditor(data.content || '# 欢迎使用\n\n点击工具栏的“预览”按钮切换到编辑模式。');
 
   } catch (error) {
     errorMessage.value = error.message;
